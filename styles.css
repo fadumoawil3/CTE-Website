@@ -1,0 +1,42 @@
+*{
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar{
+    background: white;
+    font-family: calibri;
+}
+.navdiv{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+
+}
+.logo img{
+    height: 300px;
+    width: 400px;
+}
+li{
+    list-style: none;
+    display: inline-block; /* Moves the list items to be side by side */
+}
+li a {
+    color: navy;
+    font-size: 23px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+button{
+    background-color: orange;
+    margin-left: 10px;
+    border: 1px solid orangered;
+    border-radius: 9px ;
+    padding: 10px;
+    width:90px;
+    margin-right: 25px;
+
+}
+body{
+    background-color: black;
+}
