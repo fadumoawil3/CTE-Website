@@ -1,39 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CTE Pathways</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+  <header>
+    <div class="logo">
+      <img src="logo_transparent.png" alt="Horizon Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Pathways</a>
+          <ul>
+            <li><a href="#">Arts & Communication</a></li>
+            <li><a href="#">Programming & Software Development</a></li>
+            <li><a href="#">Allied Health & Nursing</a></li>
+            <li><a href="#">Exercise Science</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+            <li><a href="#">Engineering & Manufacturing</a></li>
+            <li><a href="#">Business & Marketing</a></li>
+            <li><a href="#">More...</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">The Squawk</a>
+          <ul>
+            <li><a href="#">See our students experience through their eyes</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Enroll Now</a></li>
+      </ul>
+    </nav>
+    <div>
+      <button class="donate-btn">Donate</button>
+      <span class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fas fa-times"></i></a>
+      </span>
+    </div>
+  </header>
 
-    <div class = "hero"> 
+  <div class="hero">
+    <div class="video-overlay"></div>
+    <video autoplay loop controls playsinline>
+      <source
+        src="Student Voices_ Real Testimonials from Our School Community.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-text">CTE PATHWAYS</div>
+  </div>
 
+  <div class="subheading">
+    How Does Our CTE Program Prepare Students for College, Careers, and Beyond
+  </div>
 
-        <nav>
-            <a href="#"><img src = "logo_transparent.png" class = "logo"></a>
-            <ul> 
-                <li> <a href="#">PATHWAYS</a></li> 
-                <li> <a href="#">ENROLL</a></li> 
-                <li> <a href="#">SOCIALS</a></li> 
-                <button> <a href="#">DONATE</a></button> 
-            </ul>
-        </nav>
+  <div class="grid">
+    <div class="pathway">
+      <img src="arts.png" alt="Arts & Communication" />
+      <div class="pathway-title">Arts & Communication</div>
+    </div>
+    <div class="pathway">
+      <img src="software.png" alt="Programming & Software Development" />
+      <div class="pathway-title">Programming & Software Development</div>
+    </div>
+    <div class="pathway">
+      <img src="health.png" alt="Allied Health & Nursing" />
+      <div class="pathway-title">Allied Health & Nursing</div>
+    </div>
+    <div class="pathway">
+      <img src="exercise.png" alt="Exercise Science" />
+      <div class="pathway-title">Exercise Science</div>
+    </div>
+    <div class="pathway">
+      <img src="cybersecurity.png" alt="Cybersecurity" />
+      <div class="pathway-title">Cybersecurity pre-apprenticeship</div>
+    </div>
+    <div class="pathway">
+      <img src="engineering.png" alt="Engineering & Manufacturing" />
+      <div class="pathway-title">Engineering & Manufacturing</div>
+    </div>
+    <div class="pathway">
+      <img src="business.png" alt="Business & Marketing" />
+      <div class="pathway-title">Business & Marketing</div>
+    </div>
+    <div class="pathway">
+      <img src="more.png" alt="More" />
+      <div class="pathway-title">More...</div>
+    </div>
+  </div>
 
-        <div class = " content">
-            <h1> CTE PATHWAYS</h1>
-        </div> 
+  <!-- Dashboard grid section added here -->
+   <div class="dashboard-wrapper">
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/npOAcok3vYI?si=TEMb7ZgF8HqLR58R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-       <div class = "play_button">
-            <a href = "#"> Learn More</a> 
-        
-        </div>
-        
+  <div class="dashboard-grid">
+    <div class="card">
+      <img src="image1.png" alt="Image 1" />
+      <div class="overlay blue"></div>
     </div>
 
+    <div class="card">
+      <div class="card-content">
+        <canvas id="pieChart"></canvas>
+        <div class="stat">7 Categories Overview</div>
+      </div>
+    </div>
 
+    <div class="card">
+      <div class="card-content">
+        <canvas id="barChart"></canvas>
+        <div class="stat">Monthly Performance</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image2.png" alt="Image 2" />
+      <div class="overlay orange"></div>
+    </div>
+  </div>
+
+    <!-- Sponsor Carousel Section -->
+    <section class="sponsor-carousel-section">
+    <h2>OUR PARTNERS</h2>
+    <div class="sponsor-carousel">
+        <div class="carousel-track">
+        <img src="logo1.png" alt="Sponsor 1" />
+        <img src="logo2.png" alt="Sponsor 2" />
+        <img src="logo3.png" alt="Sponsor 3" />
+        <img src="logo4.png" alt="Sponsor 4" />
+        <img src="logo5.png" alt="Sponsor 5" />
+
+        <!-- Duplicate logos for seamless scroll -->
+        <img src="logo1.png" alt="Sponsor 1" />
+        <img src="logo2.png" alt="Sponsor 2" />
+        <img src="logo3.png" alt="Sponsor 3" />
+        <img src="logo4.png" alt="Sponsor 4" />
+        <img src="logo5.png" alt="Sponsor 5" />
+        </div>
+    </div>
+    </section>
+</div>
+  <footer>
+    <p>Horizon Science Academy Columbus High</p>
+    <p>9th & 10th Grade Building: 1070 Morse Rd, Columbus, OH 43229</p>
+    <p>11th & 12th Grade Building: 3592 Corporate Dr, Columbus, OH 43231</p>
+    <p>
+      Phone: (614) 846-7616 | Fax: (614) 846-7696 | info@horizoncolumbus.org
+    </p>
+  </footer>
+
+  <script>
+    // Pie Chart
+    new Chart(document.getElementById("pieChart"), {
+      type: 'pie',
+      data: {
+        labels: ["A", "B", "C", "D", "E", "F", "G"],
+        datasets: [{
+          data: [10, 15, 20, 10, 15, 20, 10],
+          backgroundColor: [
+            '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0',
+            '#9966FF', '#FF9F40', '#8BC34A'
+          ]
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    });
+
+    // Bar Chart
+    new Chart(document.getElementById("barChart"), {
+      type: 'bar',
+      data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+        datasets: [{
+          label: "Score",
+          data: [65, 59, 80, 81, 56, 55, 40],
+          backgroundColor: [
+            '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40', '#8BC34A'
+          ]
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
 </body>
 </html>
