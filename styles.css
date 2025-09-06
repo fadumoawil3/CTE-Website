@@ -15,6 +15,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: var(--light-color);
     color: var(--dark-color);
+    background-color: white;
 }
 
 header {
@@ -106,7 +107,17 @@ nav ul li ul li a {
     overflow: hidden;
 }
 
-.hero video {
+.pathway-hero{
+  background: url(programming_bg.png) center/cover no-repeat;
+  font-size: 2rem;
+  height: 300px;
+}
+
+.pathway-hero h1{
+  color: white;
+  margin-top: 225px;
+}
+.hero iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -119,7 +130,7 @@ nav ul li ul li a {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-color: rgba(39, 50, 122, 0.25);
+    background-color: rgba(39, 50, 122, 0.153);
     pointer-events: none;
     z-index: 1;
 }
@@ -161,8 +172,8 @@ nav ul li ul li a {
     background: var(--secondary-color);
     text-align: center;
     padding: 15px;
-    color: white;
-    font-size: 18px;
+    color: black;
+    font-size: 25px;
     font-weight: bold;
     margin-top: 15px;
 }
@@ -389,3 +400,241 @@ footer a {
   color: white;
   text-decoration: underline;
 }
+
+/* Pathway Pages */
+.offer{
+
+}
+.offer p{
+  font-size: 23px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 80%;
+  margin-top: 15px;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.classes{
+  margin-top: 25px;
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 25px;
+  padding: 25px;
+  
+
+}
+.classes h2{
+  font-size: 43px;
+  /* background: var(--secondary-color); */
+
+}
+.classes p, ul{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 22px;
+}
+.classes ul {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.classes div{
+  margin-left: 50px;
+}
+.certifications{
+  margin-top: 25px;
+  background-color: rgba(173, 216, 230, 0);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 25px;
+  padding: 15px;
+  
+
+}
+.certifications h2{
+  font-size: 43px;
+  /* background: var(--secondary-color); */
+
+}
+.certifications p, ul{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 22px;
+}
+.certifications ul {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.certifications div{
+  margin-left: 50px;
+}
+.cert_seals{
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+}
+
+.clubs_and_careers{
+  margin-top: 25px;
+  background-color: rgba(173, 216, 230, 0);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 25px;
+  padding: 25px;
+  
+
+}
+.clubs_and_careers h2{
+  font-size: 43px;
+  /* background: var(--secondary-color); */
+
+}
+.clubs_and_careers p, ul{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 22px;
+}
+.clubs_and_careers ul {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.clubs_and_careers div{
+  margin-left: 50px;
+}
+.clubs_and_careers{
+  margin-top: 25px;
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 25px;
+  padding: 25px;
+  
+
+}
+.clubs_and_careers h2{
+  font-size: 43px;
+  /* background: var(--secondary-color); */
+
+}
+.clubs_and_careers p, ul{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 22px;
+}
+.clubs_and_careers ul {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.clubs_and_careers div{
+  margin-left: 50px;
+}
+.club-logos {
+  grid-column: span 2;   /* this makes it stretch across both grid columns */
+  display: flex;         /* arrange logos in a row */
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;       /* logos wrap on small screens */
+  margin-top: 15px;
+  
+}
+
+/*Testimonial Section */
+/* Swiper container */
+.swiper {
+  width: 100%; /* full width */
+  max-width: 100%;
+  padding: 40px 0;
+  height: 700px;
+  margin-top: 15px;
+}
+
+/* Each slide */
+.swiper-slide {
+  background:  white;
+  border-radius: 12px;
+  padding: 0px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;           /* full width */
+  box-sizing: border-box;
+  text-align: left;       /* important */
+  margin-top: 55px;
+}
+.test_head{
+  font-size: 25px;
+  text-align: center;
+}
+
+.testimonial-content {
+  display: flex;           /* flex layout */
+  align-items: flex-start; /* align image and text at top */
+  gap: 20px;               /* space between image and text */
+  width: 1300px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.testimonial-content h3{
+  font-size: 32px;
+}
+
+/* Profile image */
+.profile-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%; /* makes it perfectly circular */
+  object-fit: cover;
+  flex-shrink: 0; /* keeps image size fixed */
+}
+
+/* Text container */
+.testimonial .text {
+  text-align: left;
+}
+
+/* Name */
+.testimonial h3 {
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Paragraph */
+.testimonial p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.testimonial-heading{
+   background: var(--primary-color);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none !important; /* hide the default arrow */
+}
+/* Triangle inside the button */
+.triangle-right {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-left: 22px solid var(--primary-color);
+  margin: auto; /* center vertically */
+  margin-top: 55px;
+}
+
+.triangle-left {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-right: 22px solid var(--primary-color);
+  margin: auto; /* center vertically */
+  margin-top: 55px;
+
+}
+
+
