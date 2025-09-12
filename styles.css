@@ -132,7 +132,16 @@ nav ul li ul li a {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-color: rgba(39, 50, 122, 0.409);
+    background-color: rgba(39, 50, 122, 0);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.pathway-header-overlay{
+  position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(39, 50, 122, 0.231);
     pointer-events: none;
     z-index: 1;
 }
@@ -449,6 +458,7 @@ footer a {
       border: 1px solid #cccccc00;
       border-radius: 3px;
       margin-left:  0;
+      padding: 0px;
     }
 
     .dropdown-header {
@@ -468,12 +478,15 @@ footer a {
     }
 
     .arrow {
+      display: inline-block;  /* <-- this is key */
       transition: transform 0.3s ease;
+      padding-left: 15px;
     }
 
     .arrow.rotate {
       transform: rotate(90deg);
     }
+
 
     .dropdown-content {
       display: none;
@@ -481,12 +494,42 @@ footer a {
       background: #ffffff00;
       border-top: 1px solid rgb(51, 123, 147);
       border-radius: 0 0 8px 8px;
+      width: fit-content;
     }
 
     .dropdown.show .dropdown-content {
       display: block;
     }
-    
+
+.certifications-list .dropdown-header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: opx;
+      cursor: pointer;
+      background: #f5f5f500;
+      border-radius: 8px;
+      font-size: larger;
+      color:#000000;
+        font-size: 22px;
+
+    }
+
+.certifications-list li .dropdown-content {
+      display: none;
+      padding: 12px;
+      background: #ffffff00;
+      border-top: 1px solid rgb(51, 123, 147);
+      border-radius: 0 0 8px 8px;
+    }
+
+.certifications-list .dropdown.show .dropdown-content {
+      display: block;
+    }
+
+.certifications-list li{
+  
+}
 .certifications{
   margin-top: 25px;
   background-color: rgba(173, 216, 230, 0);
@@ -507,8 +550,8 @@ footer a {
   font-size: 22px;
 }
 .certifications ul {
-  margin-left: 50px;
   margin-top: 10px;
+  margin-left: 50px;
 }
 .certifications div{
   margin-left: 50px;
@@ -587,7 +630,7 @@ footer a {
   width: 100%;
   max-width: 100%;
   height: fit-content;
-  background-color: #f3805a;
+  background-color: #ffffff;
   
 }
 
@@ -621,10 +664,10 @@ footer a {
   margin: 0px auto 0; /* centers content horizontally */
   margin-top: 35px;
   width: 1200px;
-  border: 7px solid #27327A;
+  border: 7px solid #27327a00;
   border-radius: 17px;
   padding: 45px;
-  background-color: #ffffff;
+  background-color: #f3805a00;
   background-image: url('hawks\ logo\ color\ transparent.png'); /* use quotes */
   background-repeat: no-repeat;
   background-position: right bottom; /* align right, vertically centered */
@@ -641,7 +684,7 @@ footer a {
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  border: 7px solid #27327A;
+  border: 7px solid #27327a00;
 }
 
 /* Text container */
@@ -653,7 +696,7 @@ footer a {
 .testimonial h3 {
   margin: 0 0 10px;
   font-weight: bold;
-  color: #333;
+  color: #000000;
   font-size: 32px;
 }
 
@@ -662,9 +705,9 @@ footer a {
   margin: 0;
   color: #000000;
   line-height: 1.5;
-  font-size: 40px;
-  font-family: "Tangerine", serif;
-  font-weight: 800;
+  font-size: 25px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -685,28 +728,58 @@ footer a {
 .swiper-button-prev::after {
   display: none !important; /* hide the default arrow */
 }
-/* Triangle inside the button */
-.triangle-right {
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 22px solid transparent;
-  border-bottom: 22px solid transparent;
-  border-left: 22px solid var(--primary-color);
-  margin: auto; /* center vertically */
-  margin-top: 55px;
+/* Reset default Swiper arrows */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
 }
 
-.triangle-left {
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 22px solid transparent;
-  border-bottom: 22px solid transparent;
-  border-right: 22px solid var(--primary-color);
-  margin: auto; /* center vertically */
-  margin-top: 55px;
+/* Shared arrow base */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 120px;
+  height: 120px;
+  background: navy;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  clip-path: polygon(20% 0%, 100% 50%, 20% 100%);
+  border-radius: 20px; /* rounds all 3 corners */
+}
 
+.swiper-button-prev {
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev:hover {
+  transform: rotate(180deg) scale(1.5); /* combine rotation + scale */
+  filter: brightness(1.2);
+}
+
+.swiper-button-next:hover {
+  transform: scale(1.5); /* only scale, no rotation needed */
+  filter: brightness(1.2);
 }
 
 
+/* Hover effect */
+.swiper-button-next:hover {
+  transform: scale(1.5);
+  filter: brightness(1.2);
+}
+/* Base bullets */
+.swiper .swiper-pagination-bullet {
+  width: 30px;        /* make them long horizontally */
+  height: 3px;       /* short height for rectangle shape */
+  border-radius: 5px; /* rounded corners */
+  background: gray;   /* inactive bullet color */
+  opacity: 0.5;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+/* Active bullet */
+.swiper .swiper-pagination-bullet-active {
+  background: navy;   /* active bullet color */
+  opacity: 1;
+  width: 40px;        /* optionally make it slightly longer */
+}
