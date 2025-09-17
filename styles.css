@@ -83,6 +83,9 @@ nav ul li ul li a {
     white-space: nowrap;
 }
 
+nav ul li ul li a:hover {
+  background-color:#f05a28e7;
+}
 .socials a {
     margin-left: 10px;
     color: var(--primary-color);
@@ -112,7 +115,6 @@ nav ul li ul li a {
   font-size: 2rem;
   height: 300px;
 }
-
 .pathway-hero h1{
   position: relative;
   color: white;
@@ -495,6 +497,7 @@ footer a {
       border-top: 1px solid rgb(51, 123, 147);
       border-radius: 0 0 8px 8px;
       width: fit-content;
+      
     }
 
     .dropdown.show .dropdown-content {
@@ -515,12 +518,18 @@ footer a {
 
     }
 
+.certifications-list .dropdown-header:hover{
+  color: navy;
+  font-weight: 600;
+}
 .certifications-list li .dropdown-content {
       display: none;
       padding: 12px;
       background: #ffffff00;
       border-top: 1px solid rgb(51, 123, 147);
       border-radius: 0 0 8px 8px;
+      font-weight: 600;
+      color: #F05A28;
     }
 
 .certifications-list .dropdown.show .dropdown-content {
