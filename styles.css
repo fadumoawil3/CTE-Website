@@ -118,11 +118,12 @@ nav ul li ul li a:hover {
 }
 .programming-hero h1{
   position: relative;
-  color: white;
-  margin-top: 170px;
+  color: rgb(255, 255, 255);
+  margin-top: 225px;
   z-index: 2;
-  margin-left: 70px;
-  font-size: 90px;
+  color: white; 
+  -webkit-text-stroke: 1px black; /* outline thickness + color */
+  -webkit-text-fill-color: white; /* inside text color */
 }
 
 .health-hero{
@@ -135,6 +136,9 @@ nav ul li ul li a:hover {
   color: white;
   margin-top: 225px;
   z-index: 2;
+  color: white; 
+  -webkit-text-stroke: 1px black; /* outline thickness + color */
+  -webkit-text-fill-color: white; /* inside text color */
 }
 
 .engineering-hero{
@@ -147,6 +151,9 @@ nav ul li ul li a:hover {
   color: white;
   margin-top: 225px;
   z-index: 2;
+  color: white; 
+  -webkit-text-stroke: 1px black; /* outline thickness + color */
+  -webkit-text-fill-color: white; /* inside text color */
 }
 
 .business-hero{
@@ -159,6 +166,9 @@ nav ul li ul li a:hover {
   color: white;
   margin-top: 225px;
   z-index: 2;
+  color: white; 
+  -webkit-text-stroke: 1px black; /* outline thickness + color */
+  -webkit-text-fill-color: white; /* inside text color */
 }
 
 .cybersecurity-hero{
@@ -171,6 +181,9 @@ nav ul li ul li a:hover {
   color: white;
   margin-top: 225px;
   z-index: 2;
+  color: white; 
+  -webkit-text-stroke: 1px black; /* outline thickness + color */
+  -webkit-text-fill-color: white; /* inside text color */
 }
 
 .excercise-hero{
@@ -183,6 +196,9 @@ nav ul li ul li a:hover {
   color: white;
   margin-top: 225px;
   z-index: 2;
+  color: white; 
+  -webkit-text-stroke: 1px black; /* outline thickness + color */
+  -webkit-text-fill-color: white; /* inside text color */
 }
 
 .arts-hero{
@@ -195,6 +211,9 @@ nav ul li ul li a:hover {
   color: white;
   margin-top: 225px;
   z-index: 2;
+  color: white; 
+  -webkit-text-stroke: 1px black; /* outline thickness + color */
+  -webkit-text-fill-color: white; /* inside text color */
 }
 .hero iframe {
     width: 100%;
@@ -480,7 +499,7 @@ footer {
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  background-color: #f05a28e6; /* orange background */
+  background-color: #f05a28d9; /* orange background */
   overflow: hidden;
   border-radius: 0; /* optional, remove rounding for full edge */
   padding: 15px 0;
@@ -907,59 +926,64 @@ footer a {
 }
 
 footer {
-      background-color: #5d4840bf;
-      color: white;
-      padding: 20px;
-      font-size: 14px;
-    }
+  background-color: #5d4840bf;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+}
 
-    .footer-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 20px;
-    }
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
 
-    .footer-logo img {
-      max-width: 100%;
-      display: block;
-      margin-top: 35px;
-    }
+.footer-column {
+  flex: 1;
+}
 
-    .footer-info {
-      flex: 1;
-      text-align: center;
-    }
+.footer-info-col {
+  max-width: 430px; /* keeps logo + address from stretching too wide */
+}
 
-    .footer-info address {
-      font-style: normal; /* removes italics */
-      line-height: 1.5;
-    }
+.footer-logo img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
 
-    .footer-map {
-      width: 35%;
-      height: 250px;
-    }
+.footer-info address {
+  font-style: normal;
+  line-height: 1.5;
+}
 
-    .footer-map iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
+.footer-map {
+  height: 250px;
+}
 
-    .footer-bottom {
-      margin-top: 15px;
-      text-align: center;
-      font-size: 12px;
-      border-top: 1px solid #27327A;
-      padding-top: 10px;
-    }
+.footer-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0px;
+  margin-top: 25px;
+  gap: 10px;
+}
 
-    a {
-      color: #ffd966; /* light yellow links */
-      text-decoration: none;
-    }
+.footer-bottom {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid #27327A;
+  padding-top: 10px;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+a {
+  color: #ffd966; /* light yellow links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
