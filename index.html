@@ -9,6 +9,12 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -23,13 +29,13 @@
         <li>
           <a href="#"> CTE Pathways</a>
           <ul>
-            <li><a href="#">Arts & Communication</a></li>
+            <li><a href="arts.html">Arts & Communication</a></li>
             <li><a href="programming.html">Programming & Software Development</a></li>
             <li><a href="health.html">Allied Health & Nursing</a></li>
-            <li><a href="#">Exercise Science</a></li>
-            <li><a href="#">Cybersecurity</a></li>
-            <li><a href="#">Engineering & Manufacturing</a></li>
-            <li><a href="#">Business & Marketing</a></li>
+            <li><a href="excercise.html">Exercise Science</a></li>
+            <li><a href="cybersecurity.html">Cybersecurity</a></li>
+            <li><a href="engineering.html">Engineering & Manufacturing</a></li>
+            <li><a href="business.html">Business & Marketing</a></li>
             <li><a href="#">More...</a></li>
           </ul>
         </li>
@@ -62,7 +68,7 @@
       
       Your browser does not support the video tag.
     </video> ---> 
-    <iframe width="1000" height="563" src="https://www.youtube.com/embed/8hL6iEWD7Go" title="🌟 Discover Career &amp; Technical Education (CTE) at HSA! 🚀" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="1000" height="563" src="https://www.youtube.com/embed/8hL6iEWD7Go?autoplay=1&mute=1&loop=1&playlist=8hL6iEWD7Go" title="🌟 Discover Career &amp; Technical Education (CTE) at HSA! 🚀" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <!-- <div class="hero-text">CTE PATHWAYS</div> -->
   </div>
 
@@ -70,101 +76,121 @@
     How Does Our CTE Program Prepare Students for College, Careers, and Beyond
   </div>
 
-  <div class="grid">
-    <div class="pathway">
-      <img src="arts.png" alt="Arts & Communication" />
-      <div class="pathway-title">Arts & Communication</div>
+  <div class="card-grid-pathways">
+    <div class="card">
+      <img src="software.png" alt="Software">
+      <div class="overlay">
+        <h3>Software Development</h3>
+        <p><i>  Learn the foundations of computer programming, app design, and software development. Students build problem-solving skills while exploring coding languages and real-world projects that prepare them for careers in technology.</i></p>
+      </div>
     </div>
-    <div class="pathway">
-      <a href="programming.html">
-      <img src="software.png" alt="Programming & Software Development" />
-      <div class="pathway-title">Programming & Software Development</div>
-      </a>
+
+    <div class="card">
+      <img src="cybersecurity.png" alt="Cybersecurity">
+      <div class="overlay">
+        <h3>Cybersecurity</h3>
+        <p><i>  Gain the knowledge to protect digital systems, networks, and data from cyber threats. Students learn security principles, ethical hacking, and defense strategies that are highly valued in today’s technology-driven world.</i></p>
+      </div>
     </div>
-    <div class="pathway">
-      <img src="health.png" alt="Allied Health & Nursing" />
-      <div class="pathway-title">Allied Health & Nursing</div>
+
+    <div class="card">
+      <img src="health.png" alt="Health">
+      <div class="overlay">
+        <h3>Allied Health & Nursing</h3>
+        <p><i>  Explore the many careers in healthcare, from nursing to medical research. Students gain an introduction to anatomy, patient care, and health systems while preparing for opportunities in one of the fastest-growing industries.</i></p>
+      </div>
     </div>
-    <div class="pathway">
-      <img src="exercise.png" alt="Exercise Science" />
-      <div class="pathway-title">Exercise Science</div>
+
+    <div class="card">
+      <img src="arts.png" alt="Arts">
+      <div class="overlay">
+        <h3>Arts & Communication</h3>
+        <p><i>  Build creative and technical skills in media production, broadcasting, and digital design. Students work with video editing, audio, photography, and Photoshop while learning to share ideas effectively. This pathway opens doors to careers in film, journalism, graphic design, and digital content creation.</i></p>
+      </div>
     </div>
-    <div class="pathway">
-      <img src="cybersecurity.png" alt="Cybersecurity" />
-      <div class="pathway-title">Cybersecurity pre-apprenticeship</div>
+
+    <div class="card">
+      <img src="business.png" alt="Business">
+      <div class="overlay">
+        <h3>Business & Marketing</h3>
+        <p><i>  Develop leadership, communication, and entrepreneurial skills for success in any career field. Students learn the fundamentals of marketing, finance, and management while exploring real business case studies and projects.</i></p>
+      </div>
     </div>
-    <div class="pathway">
-      <img src="engineering.png" alt="Engineering & Manufacturing" />
-      <div class="pathway-title">Engineering & Manufacturing</div>
+
+    <div class="card">
+      <img src="exercise.png" alt="Exercise">
+      <div class="overlay">
+        <h3>Excercise Science</h3>
+        <p><i>  Study how the body moves and performs through fitness, sports, and health. Students explore anatomy, physiology, and training methods while gaining hands-on experience in exercise and wellness. This pathway prepares students for careers in sports medicine, physical therapy, personal training, and athletic performance.</i></p>
+      </div>
     </div>
-    <div class="pathway">
-      <img src="business.png" alt="Business & Marketing" />
-      <div class="pathway-title">Business & Marketing</div>
+
+    <div class="card">
+      <img src="engineering.png" alt="Engineering">
+      <div class="overlay">
+        <h3>Engineering</h3>
+        <p><i>  Discover how science and math come together to design, test, and build innovative solutions. Students explore mechanical, electrical, and civil engineering concepts through hands-on projects and problem-based learning.</i></p>
+      </div>
     </div>
-    <div class="pathway">
-      <img src="more.png" alt="More" />
-      <div class="pathway-title">More...</div>
-    </div>
+
   </div>
+
+
+  
 
   <!-- Dashboard grid section added here -->
    <div class="dashboard-wrapper">
+      <div class="dashboard-grid">
+        <div class="dashboard-card">
+          <img src="image1.png" alt="Image 1" />
+          <div class="overlay blue"></div>
+        </div>
 
-  <div class="dashboard-grid">
-    <div class="card">
-      <img src="image1.png" alt="Image 1" />
-      <div class="overlay blue"></div>
-    </div>
+        <div class="dashboard-card">
+          <div class="card-content">
+            <canvas id="pieChart"></canvas>
+            <div class="stat">7 Categories Overview</div>
+          </div>
+        </div>
 
-    <div class="card">
-      <div class="card-content">
-        <canvas id="pieChart"></canvas>
-        <div class="stat">7 Categories Overview</div>
-      </div>
-    </div>
+        <div class="dashboard-card">
+          <div class="card-content">
+            <canvas id="barChart"></canvas>
+            <div class="stat">Monthly Performance</div>
+          </div>
+        </div>
 
-    <div class="card">
-      <div class="card-content">
-        <canvas id="barChart"></canvas>
-        <div class="stat">Monthly Performance</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="image2.png" alt="Image 2" />
-      <div class="overlay orange"></div>
+        <div class="dashboard-card">
+          <img src="image2.png" alt="Image 2" />
+          <div class="overlay orange"></div>
+        </div>
     </div>
   </div>
 
     <!-- Sponsor Carousel Section -->
-    <section class="sponsor-carousel-section">
+  <section class="sponsor-carousel-section">
     <h2>OUR PARTNERS</h2>
-    <div class="sponsor-carousel">
-        <div class="carousel-track">
-        <img src="logo1.png" alt="Sponsor 1" />
-        <img src="logo2.png" alt="Sponsor 2" />
-        <img src="logo3.png" alt="Sponsor 3" />
-        <img src="logo4.png" alt="Sponsor 4" />
-        <img src="logo5.png" alt="Sponsor 5" />
-
-        <!-- Duplicate logos for seamless scroll -->
-        <img src="logo1.png" alt="Sponsor 1" />
-        <img src="logo2.png" alt="Sponsor 2" />
-        <img src="logo3.png" alt="Sponsor 3" />
-        <img src="logo4.png" alt="Sponsor 4" />
-        <img src="logo5.png" alt="Sponsor 5" />
-        </div>
+      <div class="sponsor-carousel">
+          <div class="carousel-track">
+            <img src="microsoft_sponsor.png" alt="Sponsor 1" />
+            <img src="ramtec_sponsor.png" alt="Sponsor 2" />
+            <img src="rockwellautomation_sponsor.png" alt="Sponsor 3" />
+            <img src="pioneerrx_sponsor.png" alt="Sponsor 4" />
+            <img src="arme_sponsor.webp" alt="Sponsor 5" />
+            <img src="compe_sponsor.png" alt="Sponsor 6" />
+            <img src="uco_sponsor.png" alt="Sponsor 7" />
+            <img src="cstate_sponsor.jpg" alt="Sponsor 8" />
+            <img src="microsoft_sponsor.png" alt="Sponsor 1" />
+            <img src="ramtec_sponsor.png" alt="Sponsor 2" />
+            <img src="rockwellautomation_sponsor.png" alt="Sponsor 3" />
+            <img src="pioneerrx_sponsor.png" alt="Sponsor 4" />
+            <img src="arme_sponsor.webp" alt="Sponsor 5" />
+            <img src="compe_sponsor.png" alt="Sponsor 6" />
+            <img src="uco_sponsor.png" alt="Sponsor 7" />
+            <img src="cstate_sponsor.jpg" alt="Sponsor 8" /> 
+      </div>
     </div>
-    </section>
-</div>
-  <footer>
-    <p>Horizon Science Academy Columbus High</p>
-    <p>9th & 10th Grade Building: 1070 Morse Rd, Columbus, OH 43229</p>
-    <p>11th & 12th Grade Building: 3592 Corporate Dr, Columbus, OH 43231</p>
-    <p>
-      Phone: (614) 846-7616 | Fax: (614) 846-7696 | info@horizoncolumbus.org
-    </p>
-  </footer>
+  </section>
 
   <script>
     // Pie Chart
@@ -215,5 +241,42 @@
       }
     });
   </script>
+
+  <footer>
+    <div class="footer-top">
+      <!-- Left: Logo -->
+      <div class="footer-logo">
+        <img src="logo_transparent.png" alt="School Logo">
+      </div>
+
+      <!-- Middle: Info -->
+      <div class="footer-info">
+        <address>
+          <strong>9th & 10th Grade Building</strong><br>
+           1070 Morse Rd., Columbus, OH 43229<br><br>
+
+          <strong>11th & 12th Grade Building</strong><br>
+          3692 Corporate Dr., Columbus, OH 43231<br><br>
+
+          <strong>Phone:</strong> <a href="tel:+15551234567">(614) 846-7616</a><br>
+          <strong>Fax:</strong> (614) 846-7696<br>
+          <strong>Email:</strong> <a href="mailto:info@hsach.org">info@hsach.org</a>
+        </address>
+      </div>
+
+      <!-- Right: Map -->
+      <div class="footer-map">
+        <!-- Embed Google Map with both locations -->
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1GweGKdS1VEobQ70tPUMP6gOom646dzU&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+
+      </div>
+    </div>
+
+    <!-- Bottom: Copyright -->
+    <div class="footer-bottom">
+      © 2025 Horizon Science Academy. All rights reserved.
+    </div>
+  </footer>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #27327A;
+    --primary-color: #16489a;
     --secondary-color: #F05A28;
     --light-color: #f3f3f3;
     --dark-color: #111;
@@ -12,10 +12,11 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif;  /* default for body text */
     background-color: var(--light-color);
     color: var(--dark-color);
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+
 }
 
 header {
@@ -110,12 +111,86 @@ nav ul li ul li a:hover {
     overflow: hidden;
 }
 
-.pathway-hero{
+.programming-hero{
   background: url(programming_bg.png) center/cover no-repeat;
   font-size: 2rem;
   height: 300px;
 }
-.pathway-hero h1{
+.programming-hero h1{
+  position: relative;
+  color: white;
+  margin-top: 170px;
+  z-index: 2;
+  margin-left: 70px;
+  font-size: 90px;
+}
+
+.health-hero{
+  background: url(healthbg.png) center/cover no-repeat;
+  font-size: 2rem;
+  height: 300px;
+}
+.health-hero h1{
+  position: relative;
+  color: white;
+  margin-top: 225px;
+  z-index: 2;
+}
+
+.engineering-hero{
+  background: url(engineeringbg.png) center/cover no-repeat;
+  font-size: 2rem;
+  height: 300px;
+}
+.engineering-hero h1{
+  position: relative;
+  color: white;
+  margin-top: 225px;
+  z-index: 2;
+}
+
+.business-hero{
+  background: url(businessbg.png) center/cover no-repeat;
+  font-size: 2rem;
+  height: 300px;
+}
+.business-hero h1{
+  position: relative;
+  color: white;
+  margin-top: 225px;
+  z-index: 2;
+}
+
+.cybersecurity-hero{
+  background: url(cybersecuritybg.png) center/cover no-repeat;
+  font-size: 2rem;
+  height: 300px;
+}
+.cybersecurity-hero h1{
+  position: relative;
+  color: white;
+  margin-top: 225px;
+  z-index: 2;
+}
+
+.excercise-hero{
+  background: url(excerisebg.png) center/cover no-repeat;
+  font-size: 2rem;
+  height: 300px;
+}
+.excercise-hero h1{
+  position: relative;
+  color: white;
+  margin-top: 225px;
+  z-index: 2;
+}
+
+.arts-hero{
+  background: url(artsbg.png) center/cover no-repeat;
+  font-size: 2rem;
+  height: 300px;
+}
+.arts-hero h1{
   position: relative;
   color: white;
   margin-top: 225px;
@@ -135,15 +210,6 @@ nav ul li ul li a:hover {
     top: 0; left: 0;
     width: 100%; height: 100%;
     background-color: rgba(39, 50, 122, 0);
-    pointer-events: none;
-    z-index: 1;
-}
-
-.pathway-header-overlay{
-  position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(39, 50, 122, 0.231);
     pointer-events: none;
     z-index: 1;
 }
@@ -191,62 +257,6 @@ nav ul li ul li a:hover {
     margin-top: 15px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    padding: 40px 40px;
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
-.pathway {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-    height: 180px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.pathway:hover{
-    scale: 1.15;
-}
-.pathway::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(39, 50, 122, 0.3);
-    pointer-events: none;
-    z-index: 5; /* behind text */
-}
-
-.pathway img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    z-index: 1; /* below overlay */
-}
-
-.pathway-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: 800;
-    font-size: 24px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    user-select: none;
-    padding: 0;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.75);
-    z-index: 10; /* above overlay */
-}
-
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -255,20 +265,110 @@ footer {
     font-size: 14px;
 }
 
-/* ====== Dashboard grid styles ====== */
+/* Pathway Cards */
+.card-grid-pathways {
+  display: flex;
+  flex-wrap: wrap;          /* allows multiple rows */
+  justify-content: center;  /* centers cards in each row */
+  gap: 20px; gap: 25px;
+  margin: 10px;
+  margin-top: 33px;
+}
 
+.card-grid-pathways .card {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+  background: #ddd;
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 350px;
+  
+}
+
+.card-grid-pathways .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  
+}
+
+.card-grid-pathways .card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #16499ad2;
+  color: #fff;
+  padding: 20px 0px 10px 10px;
+  transition: height 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+}
+
+.card-grid-pathways .card:hover .overlay {
+  height: 100%;
+}
+
+.card-grid-pathways .card .overlay h3 {
+  font-size: 23px;
+  font-family: 'Poppins', sans-serif;  /* headings */
+  font-weight: 600; /* semi-bold */
+  margin-left: 0px;   /* equal top and bottom spacing */
+  padding: 0;       /* remove extra padding if any */
+  line-height: 1.3; /* keeps text from looking squished */
+}
+
+.card-grid-pathways .card .overlay p {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.card-grid-pathways .card:hover .overlay p {
+  opacity: 1;
+  max-height: 200px;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .card-grid-pathways {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid-pathways {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ====== Dashboard grid styles ====== */
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(2, 495px); /* 330px * 1.5 */
-  grid-auto-rows: 300px; /* 200px * 1.5 */
-  gap: 0;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns across full width */
+  grid-auto-rows: 400px;                 /* increase row height */
+                             /* spacing between cards */
   justify-content: center;
   align-content: center;
   box-sizing: border-box;
-  margin: 60px auto; /* add margin so it's spaced */
+  margin-top: 55px;
+  width: 100%;                           /* stretch full page */
+  max-width: 1900px;                     /* optional: set max width */
+  padding: 0px;                       /* side padding so it’s not glued to edges */
 }
 
-.card {
+.dashboard-grid .card {
   position: relative;
   background: transparent;
   display: flex;
@@ -276,54 +376,68 @@ footer {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 495px; /* 330px * 1.5 */
-  height: 300px; /* 200px * 1.5 */
-}
-
-canvas {
-  width: 330px !important; /* 220 * 1.5 */
-  height: 210px !important; /* 140 * 1.5 */
-}
-
-
-.card img {
   width: 100%;
   height: 100%;
-  border-radius: 0;
-  object-fit: cover;
+}
+
+/* ✅ Make images scale nicely inside their cards */
+.dashboard-grid .card img {
   display: block;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  pointer-events: none;
+  object-fit: cover; 
 }
 
-.overlay.blue {
-  background-color: rgba(39, 50, 122, 0.4);
-}
-
-.overlay.orange {
-  background-color: rgba(240, 90, 40, 0.4);
-}
-
-.card-content {
-  position: relative;
-  z-index: 2;
+/* ✅ Chart cards stay unaffected */
+.dashboard-grid .card-content {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-canvas {
-  width: 220px !important;
-  height: 140px !important;
+/* ✅ Canvas sizing (charts) */
+.dashboard-grid canvas {
+  width: 100% !important;   /* scales inside card */
+  height: 100% !important;
+  max-width: 600px;
+  max-height: 350px;
 }
+.dashboard-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.dashboard-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dashboard-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.dashboard-card .overlay.blue {
+  background-color: rgba(0, 60, 160, 0.6);
+}
+
+.dashboard-card .overlay.orange {
+  background-color: rgba(255, 100, 0, 0.6);
+}
+
 
 .stat {
   margin-top: 5px;
@@ -366,7 +480,7 @@ canvas {
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  background-color: var(--secondary-color); /* orange background */
+  background-color: #f05a28e6; /* orange background */
   overflow: hidden;
   border-radius: 0; /* optional, remove rounding for full edge */
   padding: 15px 0;
@@ -376,24 +490,22 @@ canvas {
   display: flex;
   gap: 50px;
   animation: scroll 20s linear infinite;
-  align-items: center;
-  justify-content: center;
+  width: max-content; /* makes the track exactly as wide as its content */
 }
-
 .carousel-track img {
-  height: 100px;
-  pointer-events: none;
-  user-select: none;
+  height: 80px;
+  flex-shrink: 0;
 }
 
 @keyframes scroll {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(calc(-250px * 10)); /* adjust based on number of logos and their width+gap */
+  to {
+    transform: translateX(-50%); /* move by exactly one set of logos */
   }
 }
+
 
 footer {
   background-color: var(--primary-color);
@@ -518,9 +630,10 @@ footer a {
 
     }
 
-.certifications-list .dropdown-header:hover{
+.certifications-list .dropdown-header h3:hover{
   color: navy;
   font-weight: 600;
+  text-decoration: underline;
 }
 .certifications-list li .dropdown-content {
       display: none;
@@ -577,7 +690,7 @@ footer a {
   grid-template-columns: repeat(2,1fr);
   column-gap: 25px;
   padding: 25px;
-  
+  height: auto;
 
 }
 .clubs_and_careers h2{
@@ -626,7 +739,7 @@ footer a {
   grid-column: span 2;   /* this makes it stretch across both grid columns */
   display: flex;         /* arrange logos in a row */
   justify-content: center;
-  gap: 70px;
+  gap: 25px;
   flex-wrap: wrap;       /* logos wrap on small screens */
   margin-top: 15px;
   height: 150px;
@@ -792,3 +905,61 @@ footer a {
   opacity: 1;
   width: 40px;        /* optionally make it slightly longer */
 }
+
+footer {
+      background-color: #5d4840bf;
+      color: white;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .footer-logo img {
+      max-width: 100%;
+      display: block;
+      margin-top: 35px;
+    }
+
+    .footer-info {
+      flex: 1;
+      text-align: center;
+    }
+
+    .footer-info address {
+      font-style: normal; /* removes italics */
+      line-height: 1.5;
+    }
+
+    .footer-map {
+      width: 35%;
+      height: 250px;
+    }
+
+    .footer-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .footer-bottom {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 12px;
+      border-top: 1px solid #27327A;
+      padding-top: 10px;
+    }
+
+    a {
+      color: #ffd966; /* light yellow links */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
