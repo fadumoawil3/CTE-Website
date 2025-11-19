@@ -267,7 +267,8 @@ nav ul li ul li a:hover {
 }
 
 .subheading {
-    background: var(--secondary-color);
+    /* background-color: #ff5117; */
+    background: var(--secondary-color); 
     text-align: center;
     padding: 15px;
     color: black;
@@ -320,6 +321,7 @@ footer {
   left: 0;
   right: 0;
   height: 60px;
+  /* background: #1a55c3cf;*/
   background: #16499ad2;
   color: #fff;
   padding: 20px 0px 10px 10px;
@@ -413,9 +415,21 @@ footer {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
+
+.card-content h1,h2{
+  color: var(--primary-color);
+}
+.card-content p{
+  width: 450px;
+}
+.card-content a{
+  color: #F05A28;
+  font-size: 17px;
+}
+
 
 /* ✅ Canvas sizing (charts) */
 .dashboard-grid canvas {
@@ -812,7 +826,7 @@ footer a {
   background-image: url('hawks\ logo\ color\ transparent.png'); /* use quotes */
   background-repeat: no-repeat;
   background-position: right bottom; /* align right, vertically centered */
-  background-size: 100px auto;      /* adjust size, width 150px, auto height */
+  background-size: 175px auto;      /* adjust size, width 150px, auto height */
   opacity: 1;
 }
 .hawks_background{
@@ -850,6 +864,7 @@ footer a {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
+  padding-top: 35px;
 }
 
 /* Testimonial section heading */
