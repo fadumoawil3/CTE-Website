@@ -479,6 +479,62 @@ footer {
   font-size: 14px;
 }
 
+/* Image Gallery */
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.image_gallery {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.image_gallery h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+:root {
+  --magnifier: 6;
+  --gap: 1vmin;
+  --transition: 0.5s;
+}
+
+.gallery_grid{
+  width: 97vw;
+  height: 45vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  margin: auto;
+}
+
+/* Main effect */
+.gallery_grid img {
+  --brightness: 0.75;
+  transition: flex var(--transition), filter var(--transition);
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(var(--grayscale)) brightness(var(--brightness));
+  flex: 1;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery_grid img:hover {
+  --brightness: 1.15;
+  --grayscale: 0;
+  flex: var(--magnifier);
+}
+
+
 /*Carasoil */
 .sponsor-section {
   
